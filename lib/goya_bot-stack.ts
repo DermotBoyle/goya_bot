@@ -28,9 +28,9 @@ export class GoyaBotStack extends cdk.Stack {
       destinationBucket: goyaCaprichosPublicBucket,
     });
 
-    const makeTweet = new cdk.aws_lambda_nodejs.NodejsFunction(this, 'getCredentialsFunc', {
-      functionName: 'getCredentialsFunc',
-      entry: path.join(__dirname, '..', 'api', 'make-tweet.ts'),
+    const makeTweetFunc = new cdk.aws_lambda_nodejs.NodejsFunction(this, 'makeTweet', {
+      functionName: 'makeTweet',
+      entry: path.join(__dirname, '..', 'api', 'makeTweet.ts'),
       handler: 'handler',
       runtime: cdk.aws_lambda.Runtime.NODEJS_18_X,
       environment: {
@@ -38,8 +38,7 @@ export class GoyaBotStack extends cdk.Stack {
       },
     });
 
-    makeTweet.addToRolePolicy(goyaCaprichosPublicBucketPolicy);
-
+    makeTweetFunc.addToRolePolicy(goyaCaprichosPublicBucketPolicy);
 
   }
 }
