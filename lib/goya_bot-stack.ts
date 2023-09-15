@@ -7,8 +7,6 @@ export class GoyaBotStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const secretManager = cdk.aws_secretsmanager.Secret.fromSecretNameV2(this, 'secretManager', 'prod/twitter/api/key');
-
     const goyaCaprichosPublicBucket = new cdk.aws_s3.Bucket(this, 'goyaCaprichosPublicBucket', {
       bucketName: 'goya-caprichos-public-bucket',
       publicReadAccess: true,
