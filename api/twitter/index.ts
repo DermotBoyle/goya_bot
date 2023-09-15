@@ -1,12 +1,12 @@
 import { getCaprichoImageUri } from "./getCaprichoImageUri";
 import { getCredentials } from "./getCredentials";
 
-const BUCKET_URL_CAPRICHOS = process.env.GOYA_CAPRICHOS_PUBLIC_BUCKET!;
+const BUCKET_NAME = process.env.GOYA_CAPRICHOS_PUBLIC_BUCKET!;
 
 export const handler = async () => {
 
 	const userClient = await getCredentials();
-	const capricho = await getCaprichoImageUri("capricho_one.jpg", BUCKET_URL_CAPRICHOS);
+	const capricho = await getCaprichoImageUri({ filename: "capricho_one.jpg", bucketName: BUCKET_NAME });
 
 	const imageDownload = await fetch(capricho)
 	const imageBuffer = Buffer.from(await imageDownload.arrayBuffer());

@@ -47,7 +47,7 @@ export class GoyaBotStack extends cdk.Stack {
       handler: 'handler',
       runtime: cdk.aws_lambda.Runtime.NODEJS_18_X,
       environment: {
-        'GOYA_CAPRICHOS_PUBLIC_BUCKET': goyaCaprichosPublicBucket.s3UrlForObject(),
+        'GOYA_CAPRICHOS_PUBLIC_BUCKET': goyaCaprichosPublicBucket.bucketName,
       },
       timeout: cdk.Duration.seconds(30),
     });
