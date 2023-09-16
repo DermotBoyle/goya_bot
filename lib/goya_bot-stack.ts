@@ -58,11 +58,11 @@ export class GoyaBotStack extends cdk.Stack {
         'GOYA_CAPRICHOS_DYNAMO_TABLE_NAME': caprichosDynamoTable.tableName
       },
       timeout: cdk.Duration.seconds(30),
+      memorySize: 256,
     });
 
+    caprichosDynamoTable.grantReadWriteData(makeTweetFunc);
     makeTweetFunc.addToRolePolicy(goyaCaprichosPublicBucketPolicy);
     makeTweetFunc.addToRolePolicy(goyaCaprichosSecretManagerAccessPolicy);
-    caprichosDynamoTable.grantReadWriteData(makeTweetFunc)
-
   }
 }
