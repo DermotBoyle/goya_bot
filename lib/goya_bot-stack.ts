@@ -22,7 +22,6 @@ export class GoyaBotStack extends cdk.Stack {
       objectOwnership: cdk.aws_s3.ObjectOwnership.OBJECT_WRITER,
     });
 
-    // Get object policy for bucket
     const goyaCaprichosPublicBucketPolicy = new PolicyStatement({
       effect: cdk.aws_iam.Effect.ALLOW,
       actions: [ 's3:GetObject', 's3:PutObject' ],
@@ -35,11 +34,19 @@ export class GoyaBotStack extends cdk.Stack {
       resources: [ `*` ]
     });
 
-    // Create new bucket deployment
     new cdk.aws_s3_deployment.BucketDeployment(this, 'goyaCaprichosPublicBucketDeployment', {
       sources: [ cdk.aws_s3_deployment.Source.asset(path.join(__dirname, '..', 'assets')) ],
       destinationBucket: goyaCaprichosPublicBucket,
     });
+
+    const caprichosDynamoTable = new cdk.aws_dynamodb.Table(this, 'LosCaprichos', {
+      partitionKey: {
+        name: 'plate_number',
+        type: cdk.aws_dynamodb.AttributeType.STRING
+      },
+      billingMode: cdk.aws_dynamodb.BillingMode.PAY_PER_REQUEST,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+    })
 
     const makeTweetFunc = new cdk.aws_lambda_nodejs.NodejsFunction(this, 'makeTweet', {
       functionName: 'makeTweet',
@@ -48,11 +55,14 @@ export class GoyaBotStack extends cdk.Stack {
       runtime: cdk.aws_lambda.Runtime.NODEJS_18_X,
       environment: {
         'GOYA_CAPRICHOS_PUBLIC_BUCKET': goyaCaprichosPublicBucket.bucketName,
+        'GOYA_CAPRICHOS_DYNAMO_TABLE_NAME': caprichosDynamoTable.tableName
       },
       timeout: cdk.Duration.seconds(30),
     });
 
     makeTweetFunc.addToRolePolicy(goyaCaprichosPublicBucketPolicy);
     makeTweetFunc.addToRolePolicy(goyaCaprichosSecretManagerAccessPolicy);
+    caprichosDynamoTable.grantReadWriteData(makeTweetFunc)
+
   }
 }
