@@ -1,5 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import { PolicyStatement } from 'aws-cdk-lib/aws-iam';
+import { Rule, Schedule } from 'aws-cdk-lib/aws-events';
+import * as targets from 'aws-cdk-lib/aws-events-targets';
 import { Construct } from 'constructs';
 import * as path from 'path';
 
@@ -60,6 +62,15 @@ export class GoyaBotStack extends cdk.Stack {
       timeout: cdk.Duration.seconds(30),
       memorySize: 256,
     });
+
+    new Rule(this, 'makeTweetRule', {
+      schedule: Schedule.cron({
+        minute: '0',
+        hour: '6',
+      }),
+      targets: [ new targets.LambdaFunction(makeTweetFunc) ],
+    });
+
 
     caprichosDynamoTable.grantReadWriteData(makeTweetFunc);
     makeTweetFunc.addToRolePolicy(goyaCaprichosPublicBucketPolicy);

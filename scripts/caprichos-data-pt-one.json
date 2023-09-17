@@ -1,124 +1,124 @@
 {
-    "GoyaBotStack-LosCaprichos?????????": [
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_one"},
-            "plate_number": {"S": "1"},
-            "name": {"S": "Francisco Goya y Lucientes, Pintor"},
-            "translation": {"S": "Francisco Goya and Lucientes, the Painter"},
-            "description": {"S": "This plate serves as a self-portrait of Francisco Goya and introduces the theme of the artist's dream, a recurring motif in the series. It reflects Goya's anxieties and the need to express his critical views during a time of political and social turmoil in Spain."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
+    "GoyaBotStack-LosCaprichos8758919D-4IA0COZ67SDU": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_one"},
+                    "plate_number": {"S": "1"},
+                    "name": {"S": "Francisco Goya y Lucientes, Pintor"},
+                    "translation": {"S": "Francisco Goya and Lucientes, the Painter"},
+                    "description": {"S": "This plate serves as a self-portrait of Francisco Goya and introduces the theme of the artist's dream, a recurring motif in the series. It reflects Goya's anxieties and the need to express his critical views during a time of political and social turmoil in Spain."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_two"},
+                    "plate_number": {"S": "2"},
+                    "name": {"S": "El sí pronuncian y la mano alargan al primero que llega"},
+                    "translation": {"S": "They say 'yes' and extend the hand to the first who arrives"},
+                    "description": {"S": "Goya satirizes the practice of arranged marriages, highlighting the lack of agency and choice for young women in such arrangements. This commentary is relevant to the societal norms and gender roles prevalent in 18th-century Spain."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_three"},
+                    "plate_number": {"S": "3"},
+                    "name": {"S": "Que viene el Coco"},
+                    "translation": {"S": "Here comes the Bogeyman"},
+                    "description": {"S": "This plate addresses irrational fears and the power of superstition, featuring a woman warning her child about the Bogeyman. It reflects the widespread superstitions and anxieties of the time, including fear of the unknown."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_four"},
+                    "plate_number": {"S": "4"},
+                    "name": {"S": "El de la Rollona"},
+                    "translation": {"S": "Mama's boy"},
+                    "description": {"S": "Goya mocks the man who is dressed in baby clothes, has his fingers in his mouth, and a look of terror in his eyes, though he's bearded and obviously strong. The nanny or mother grieves in the shadow behind him, so disappointed in his failure to become a man."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_five"},
+                    "plate_number": {"S": "5"},
+                    "name": {"S": "Tal para cual"},
+                    "translation": {"S": "Such is life"},
+                    "description": {"S": "Goya uses intense black inks, suggesting a possibly nighttime setting, where the brightest areas are the women's garments and the young woman's face and generous neckline. The plate may allude to hidden intentions or the world of prostitution."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_six"},
+                    "plate_number": {"S": "6"},
+                    "name": {"S": "Nadie se conoce"},
+                    "translation": {"S": "No one knows each other"},
+                    "description": {"S": "In this dark scene, people wear masks, concealing their true identities. Goya highlights the theme of deception and the uncertainty of human nature, suggesting that true selves are often hidden."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_seven"},
+                    "plate_number": {"S": "7"},
+                    "name": {"S": "Ni así la distingue"},
+                    "translation": {"S": "Not even so can he make her out"},
+                    "description": {"S": "A man views a woman through a monocle, highlighting the limitations of his perspective."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_eight"},
+                    "plate_number": {"S": "8"},
+                    "name": {"S": "¡Que se la llevaron!"},
+                    "translation": {"S": "They carried her off!"},
+                    "description": {"S": "A woman is being abducted by two figures in the dark, possibly men, their faces concealed. She resists, but they overpower her. Goya conveys her suffering, depicting the scene at night with dark tones."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_nine"},
+                    "plate_number": {"S": "9"},
+                    "name": {"S": "Tántalo"},
+                    "translation": {"S": "Tantalus"},
+                    "description": {"S": "Goya critiques the unsatisfactory nature of old men marrying young women, likening it to the eternal torture of Tantalus in Greek mythology."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "filename": {"S": "capricho_ten"},
+                    "plate_number": {"S": "10"},
+                    "name": {"S": "El amor y la muerte"},
+                    "translation": {"S": "Love and Death"},
+                    "description": {"S": "Goya contrasts the themes of love and death, using Calderon's lover as an example of losing love through rash actions."},
+                    "hasBeenTweeted": {"BOOL": false}
+                }
+            }
         }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_two"},
-            "plate_number": {"S": "2"},
-            "name": {"S": "El sí pronuncian y la mano alargan al primero que llega"},
-            "translation": {"S": "They say 'yes' and extend the hand to the first who arrives"},
-            "description": {"S": "Goya satirizes the practice of arranged marriages, highlighting the lack of agency and choice for young women in such arrangements. This commentary is relevant to the societal norms and gender roles prevalent in 18th-century Spain."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_three"},
-            "plate_number": {"S": "3"},
-            "name": {"S": "Que viene el Coco"},
-            "translation": {"S": "Here comes the Bogeyman"},
-            "description": {"S": "This plate addresses irrational fears and the power of superstition, featuring a woman warning her child about the Bogeyman. It reflects the widespread superstitions and anxieties of the time, including fear of the unknown."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_four"},
-            "plate_number": {"S": "4"},
-            "name": {"S": "El que dirá el bobo"},
-            "translation": {"S": "What the fool will say"},
-            "description": {"S": "Goya explores themes of gossip and judgment, suggesting that the simpleton's opinions can be as impactful as others'. This commentary reflects the gossip-driven society and the power of public opinion in the 18th century."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_five"},
-            "plate_number": {"S": "5"},
-            "name": {"S": "El mismo burro"},
-            "translation": {"S": "The same donkey"},
-            "description": {"S": "This plate uses satire to comment on the repetitive and unchanging nature of certain societal behaviors. It reflects Goya's critique of societal stagnation and rigidity during his era."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_six"},
-            "plate_number": {"S": "6"},
-            "name": {"S": "El hechizado por fuerza"},
-            "translation": {"S": "The one bewitched by force"},
-            "description": {"S": "Goya depicts a man suffering from the effects of a spell or curse, critiquing irrational beliefs and superstitions. This reflects the prevalence of superstition and the fear of the supernatural in 18th-century Spain."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_seven"},
-            "plate_number": {"S": "7"},
-            "name": {"S": "Tal para cual"},
-            "translation": {"S": "Birds of a feather"},
-            "description": {"S": "In this print, Goya portrays people who are similar in character, suggesting that like-minded individuals tend to flock together. It reflects the social divisions and cliques present in Spanish society at the time."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_eight"},
-            "plate_number": {"S": "8"},
-            "name": {"S": "Los resultados"},
-            "translation": {"S": "The results"},
-            "description": {"S": "This plate hints at the consequences of certain actions or decisions, symbolized by a giant floating head. It reflects the uncertainty and unpredictability of the outcomes of political and personal choices during Goya's time."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_nine"},
-            "plate_number": {"S": "9"},
-            "name": {"S": "Nadie se conoce"},
-            "translation": {"S": "Nobody knows themselves"},
-            "description": {"S": "Goya explores the idea that people may not fully understand themselves, represented by a man looking into a mirror. It reflects the introspection and self-examination encouraged by the Enlightenment ideals of the era."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      },
-      {
-        "PutRequest": {
-          "Item": {
-            "filename": {"S": "capricho_ten"},
-            "plate_number": {"S": "10"},
-            "name": {"S": "El amor y la muerte"},
-            "translation": {"S": "Love and death"},
-            "description": {"S": "This plate contrasts the themes of love and death, symbolized by two figures riding a donkey. It reflects the juxtaposition of romanticism and mortality in the cultural and philosophical discourse of the time."},
-            "hasBeenTweeted": {"BOOL": false}
-          }
-        }
-      }
     ]
-  }
+}

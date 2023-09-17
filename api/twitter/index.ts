@@ -60,7 +60,7 @@ export const handler = async () => {
 
 		if (res.errors || resContextTweet.errors) {
 			console.log(res.errors, "ERRORS")
-			return;
+			return; //return early if there are errors
 		}
 
 		const updatedItemInTable = await dynamoClient.update({
@@ -74,6 +74,8 @@ export const handler = async () => {
 			},
 			ReturnValues: "UPDATED_NEW",
 		}).promise();
+
+		console.log(updatedItemInTable, "UPDATED ITEM IN TABLE")
 
 	} catch (error) {
 		console.log(error, "ERROR")
